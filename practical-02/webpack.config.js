@@ -1,10 +1,11 @@
 const path = require("path");
 const webpack = require("webpack");
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
   entry: "./src/index.js",
-  mode: "development",
+  // mode: "development",
   module: {
     rules: [
       {
@@ -18,12 +19,18 @@ module.exports = {
   resolve: { extensions: ["*", ".js", ".jsx"] },
   output: {
     path: path.resolve(__dirname, "dist/"),
-    publicPath: "/dist/",
+    publicPath: "/",
     filename: '[name].[contenthash].js'
   }, 
 
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      inject: true,
+      template: __dirname + '/public/index.html'
+      // template: path.resolve(__dirname, 'public', 'index.html'),
+    }),
     new CleanWebpackPlugin(),
   ]
 };

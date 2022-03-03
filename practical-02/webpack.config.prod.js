@@ -28,14 +28,6 @@ module.exports = merge(baseConfig, {
     optimization: {
         minimize: true,
         minimizer: [
-            // new OptimizeCssAssetsPlugin({
-            //     cssProcessorOptions: {
-            //         map: {
-            //             inline: false,
-            //             annotation: true,
-            //         },
-            //     },
-            // }),
             new CssMinimizerPlugin(),
             new TerserPlugin(),
         ],
