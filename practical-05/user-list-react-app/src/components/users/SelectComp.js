@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 
 const StyledStatus = styled.div`
-/* width: 20%; */
   select{
   font-size: 1rem;
   padding: 0.6em 0.7em;
@@ -24,7 +23,7 @@ const StyledStatus = styled.div`
     linear-gradient(-135deg, transparent 50%, var(--accentFg) 50%),
     linear-gradient(-225deg, transparent 50%, var(--accentFg) 50%),
     linear-gradient(var(--accentFg) 42%, var(--accentBg) 42%);
-  /* color: red; */
+
   background-color: #f5f7fa;
 }
 
@@ -45,9 +44,6 @@ const SelectComp = ({title, role}) => {
               <option selected={item.role === title} key={i} value={item.id}>{item.role}</option>
             )
           })}
-        {/* <option  value="0">{title}</option>
-        <option value="1" selected={roles}>Audi</option>
-        <option value="2">BMW</option> */}
     </select>
 </StyledStatus>
   )

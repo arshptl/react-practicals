@@ -1,10 +1,9 @@
 import React from 'react'
 import styled from 'styled-components';
 import SelectComp from './SelectComp';
+import { getFullName } from '../../static/helpers/helperFunctions';
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { RiLock2Line } from "react-icons/ri";
-
-
 
 const StyledOuterDiv = styled.div`
 cursor: pointer;    
@@ -132,18 +131,20 @@ const UserList = ({ userData, showPopupHandler, closePopup }) => {
             <StyledUserProfile>
                 <div className='styledImage'>
                     <img
-                        src={userData.image}
+
+                        src={userData.avatar}
                         alt={userData.username} />
                 </div>
                 <div>
-                    <div>{userData.username}</div>
+                    <div>{getFullName(userData.first_name, userData.last_name)}</div>
+
                     <div className='styledEmail'>{userData.email}</div>
                 </div>
             </StyledUserProfile>
             <StyledSelectDiv>
-                {userData.status === "Active" ? <div className="styledActive">Active</div> : <SelectComp title={userData.status} role={status} />}
-                {userData.access === "Owner" ? <div>Owner</div> : <SelectComp title={userData.access} role={roles} />}
-                {userData.access === 'Owner' ? <RiLock2Line style={{ color: 'gray', fontSize: '25px' }} /> : <RiDeleteBin6Line style={{ color: 'gray', fontSize: '25px' }} />}
+                <SelectComp title={userData.status} role={status} />
+                <SelectComp title={userData.access} role={roles} />
+                <RiLock2Line style={{ color: 'gray', fontSize: '25px' }} />
             </StyledSelectDiv>
         </StyledOuterDiv>
     )
