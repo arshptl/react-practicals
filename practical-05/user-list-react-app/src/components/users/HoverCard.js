@@ -1,9 +1,10 @@
 import React from 'react'
 import styled from 'styled-components';
+import { getFullName } from '../../static/helpers/helperFunctions';
 
 const StyledInfoDiv = styled.div`
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 0.8s;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 0.8s;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -12,7 +13,6 @@ const StyledInfoDiv = styled.div`
     left: 35%;
     bottom: 35%;
     width: 17em;
-    /* height: 25em; */
     background-color: white;
     border-radius: 2em;
     padding: 2em;
@@ -24,6 +24,7 @@ const StyledInfoDiv = styled.div`
         height: 7em;
         border-radius: 50%;
     }
+
     }
     .username{
         margin: 0.2em 0;
@@ -143,15 +144,15 @@ const HoverCard = ({ selectedUser }) => {
         <StyledInfoDiv>
             <div className='styledImage'>
                 <img
-                    src={selectedUser.image}
+                    src={selectedUser.avatar}
                     alt={selectedUser.username} />
             </div>
-            <div className='username'>{selectedUser.username} </div>
+            <div className='username'>{getFullName(selectedUser.first_name + selectedUser.last_name)} </div>
             <div className='email'>{selectedUser.email}</div>
             <div className='plan'>Your Plan: Standard</div>
             <button className='button'>Active User</button>
             <StyledProgress>
-            <div className='progressHeading'>Plan uses</div>
+                <div className='progressHeading'>Plan uses</div>
                 <div className="progress2 progress-moved">
                     <div className="progress-bar2" >
                     </div>
@@ -159,12 +160,12 @@ const HoverCard = ({ selectedUser }) => {
             </StyledProgress>
             <StyledStats>
                 <div>
-                    <div className='statsNum'>{selectedUser.clicksReviewed}</div>
+                    <div className='statsNum'>4567</div>
                     <div className='statsTitle'>Clicks reviewed</div>
                 </div>
                 <div className='dividerLine'></div>
                 <div>
-                    <div className='statsNum'>{selectedUser.MonthlyClicks}</div>
+                    <div className='statsNum'>3456</div>
                     <div className='statsTitle'>Monthly clicks</div>
                 </div>
             </StyledStats>
