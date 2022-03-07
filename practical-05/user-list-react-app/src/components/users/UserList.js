@@ -131,13 +131,11 @@ const UserList = ({ userData, showPopupHandler, closePopup }) => {
             <StyledUserProfile>
                 <div className='styledImage'>
                     <img
-
                         src={userData.avatar}
                         alt={userData.username} />
                 </div>
                 <div>
                     <div>{getFullName(userData.first_name, userData.last_name)}</div>
-
                     <div className='styledEmail'>{userData.email}</div>
                 </div>
             </StyledUserProfile>
