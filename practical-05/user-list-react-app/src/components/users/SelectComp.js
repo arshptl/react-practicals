@@ -23,7 +23,6 @@ const StyledStatus = styled.div`
     linear-gradient(-135deg, transparent 50%, var(--accentFg) 50%),
     linear-gradient(-225deg, transparent 50%, var(--accentFg) 50%),
     linear-gradient(var(--accentFg) 42%, var(--accentBg) 42%);
-
   background-color: #f5f7fa;
 }
 

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-
 import styled from 'styled-components';
 import Header from '../components/users/Header';
 import HoverCard from '../components/users/HoverCard';
@@ -79,7 +78,6 @@ const UsersPage = () => {
     }, []);
 
     const closePopup = () => {
-
         setShowPopup(false);
     };
     const showPopupHandler = (item) => {
@@ -104,7 +102,6 @@ const UsersPage = () => {
                 <StyledButton className='StyledButtons' active={active} buttonId={1} onClick={() => handleButtonClick(apis[0].link, 1)}>1</StyledButton>
                 <StyledButton className='StyledButtons' active={active} buttonId={2} onClick={() => handleButtonClick(apis[1].link, 2)}>2</StyledButton>
             </StyledButtonDiv>
-
         </StyledDiv>
     )
 }
