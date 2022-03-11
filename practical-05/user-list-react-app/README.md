@@ -1,4 +1,4 @@
-# Practical 06
+# Practical 07
 ******User list app - Functional specifications******
 
 - Initiated the project using Create-React-App
@@ -7,20 +7,9 @@
 	- Apis
 		- [https://reqres.in/api/users?page=1](https://reqres.in/api/users?page=1)
 		- [https://reqres.in/api/users?page=2](https://reqres.in/api/users?page=2)
-
-### Env setup
-- .env
-	- REACT_APP_DOC_TITLE = "Optimizing Practical-07"
-- .env.development
-	- REACT_APP_API_ENDPOINT_FIRST = "https://reqres.in/api/users?page=1"
-REACT_APP_API_ENDPOINT_SECOND = "https://reqres.in/api/users?page=2"
-- .env.production
-	- REACT_APP_API_ENDPOINT_FIRST = "https://reqres.in/api/users?page=1"
-REACT_APP_API_ENDPOINT_SECOND = "https://reqres.in/api/users?page=2"
-- .env.staging
-	- REACT_APP_CUSTOM_NODE_ENV = "staging"
-REACT_APP_API_ENDPOINT_FIRST = "https://reqres.in/api/users?page=1"
-REACT_APP_API_ENDPOINT_SECOND = "https://reqres.in/api/users?page=2"
+-    Optimized code
+-   Added environments in the code
+-   Generated staging and production build
 
 ### Preview:
 ![Preview of output](https://user-images.githubusercontent.com/96298315/157815266-7bcb7dce-feeb-47b2-a313-99f6eed3156c.png)
@@ -28,6 +17,8 @@ REACT_APP_API_ENDPOINT_SECOND = "https://reqres.in/api/users?page=2"
 ## Library used
 - [styled-components](https://www.npmjs.com/package/styled-components) for styling
 - [react-icons](https://www.npmjs.com/package/react-icons) for icons
+- [react-lazyload](https://www.npmjs.com/package/react-lazyload) for loading images
+- [env-cmd](https://www.npmjs.com/package/env-cmd) for executing commands using an environment from an env file
 
 ## How to Run this project
 

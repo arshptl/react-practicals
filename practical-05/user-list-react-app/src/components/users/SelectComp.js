@@ -33,7 +33,7 @@ select option {
 
 `;
 
-const SelectComp = ({title, role}) => {
+const SelectComp = React.memo(({ title, role }) => {
   return (
     <StyledStatus>
       <select>
@@ -43,9 +43,9 @@ const SelectComp = ({title, role}) => {
               <option selected={item.role === title} key={i} value={item.id}>{item.role}</option>
             )
           })}
-    </select>
-</StyledStatus>
+      </select>
+    </StyledStatus>
   )
-}
+});
 
 export default SelectComp
