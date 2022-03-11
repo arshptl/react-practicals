@@ -1,6 +1,35 @@
-# Getting Started with Create React App
+# Practical 07
+******User list app - Functional specifications******
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Initiated the project using Create-React-App
+- Used practical-05's template/UI
+- Added dynamic data instead of static data
+	- Apis
+		- [https://reqres.in/api/users?page=1](https://reqres.in/api/users?page=1)
+		- [https://reqres.in/api/users?page=2](https://reqres.in/api/users?page=2)
+-    Optimized code
+-   Added environments in the code
+-   Generated staging and production build
+
+### Preview:
+![Preview of output](https://user-images.githubusercontent.com/96298315/157815266-7bcb7dce-feeb-47b2-a313-99f6eed3156c.png)
+
+## Library used
+- [styled-components](https://www.npmjs.com/package/styled-components) for styling
+- [react-icons](https://www.npmjs.com/package/react-icons) for icons
+- [react-lazyload](https://www.npmjs.com/package/react-lazyload) for loading images
+- [env-cmd](https://www.npmjs.com/package/env-cmd) for executing commands using an environment from an env file
+
+## How to Run this project
+
+### Step 1:  `Clone this project`
+
+### Step 2:  `npm install`
+
+To install all the dependences.
+
+### Step 3: `npm start`
+To start this project
 
 ## Available Scripts
 
@@ -39,32 +68,4 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

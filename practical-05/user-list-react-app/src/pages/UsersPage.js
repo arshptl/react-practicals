@@ -63,9 +63,9 @@ const UsersPage = () => {
     const [selectedUser, setSelectedUser] = useState();
     const [users, setUsers] = useState([]);
     const [active, setActive] = useState(1);
-    const apis = [{ link: "https://reqres.in/api/users?page=1", id: 1 }, { link: "https://reqres.in/api/users?page=2", id: 2 }];
+    const apis = [{ link: process.env.REACT_APP_API_ENDPOINT_FIRST, id: 1 }, { link: process.env.REACT_APP_API_ENDPOINT_SECOND, id: 2 }];
 
-    const getUserData = async (apiLink = "https://reqres.in/api/users?page=1", id = 1) => {
+    const getUserData = async (apiLink = process.env.REACT_APP_API_ENDPOINT_FIRST, id = 1) => {
         const res = await fetch(apiLink);
         const json = await res.json();
         setUsers(json.data);
@@ -77,13 +77,14 @@ const UsersPage = () => {
         getUserData();
     }, []);
 
-    const closePopup = () => {
+    const closePopup = React.useCallback(() => {
         setShowPopup(false);
-    };
-    const showPopupHandler = (item) => {
+    }, []);
+    
+    const showPopupHandler = React.useCallback((item) => {
         setShowPopup(true);
         setSelectedUser(item);
-    };
+    }, []);
 
     const handleButtonClick = (apiLink, id) => {
         getUserData(apiLink, id);
@@ -92,7 +93,7 @@ const UsersPage = () => {
 
     return (
         <StyledDiv>
-            <Header />
+            {users.length === null ? <div>There is a problem in API</div> : <><Header />
             {users.map((obj) => {
                 return <UserList userData={obj} showPopupHandler={showPopupHandler}
                     closePopup={closePopup} key={obj.id} />;
@@ -101,7 +102,7 @@ const UsersPage = () => {
             <StyledButtonDiv>
                 <StyledButton className='StyledButtons' active={active} buttonId={1} onClick={() => handleButtonClick(apis[0].link, 1)}>1</StyledButton>
                 <StyledButton className='StyledButtons' active={active} buttonId={2} onClick={() => handleButtonClick(apis[1].link, 2)}>2</StyledButton>
-            </StyledButtonDiv>
+            </StyledButtonDiv></>}
         </StyledDiv>
     )
 }

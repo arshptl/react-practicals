@@ -172,6 +172,6 @@ const HoverCard = ({ selectedUser }) => {
 
         </StyledInfoDiv>
     )
-}
+};
 
 export default HoverCard

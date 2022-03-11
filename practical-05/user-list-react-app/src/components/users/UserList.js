@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import SelectComp from './SelectComp';
 import { getFullName } from '../../static/helpers/helperFunctions';
-import { RiDeleteBin6Line } from "react-icons/ri";
+import LazyLoad from "react-lazyload";
 import { RiLock2Line } from "react-icons/ri";
 
 const StyledOuterDiv = styled.div`
@@ -13,12 +13,10 @@ width: 100%;
 display: flex;
 align-items: flex-start;
 margin-bottom: 3em;
-/* background-color: lightpink; */
 
 @media(min-width: 37.5em) {
     flex-direction: row;
     align-items: center;
-    /* justify-content: space-between; */
 }
 
 @media (min-width: 62.5em) {
@@ -38,9 +36,7 @@ width: 100%;
         height: 3em;
         border-radius: 50%;
     }
-    
-    /* background-color: red; */
-}
+    }
 
 .styledEmail{
     color: gray;
@@ -130,9 +126,11 @@ const UserList = ({ userData, showPopupHandler, closePopup }) => {
             }>
             <StyledUserProfile>
                 <div className='styledImage'>
-                    <img
-                        src={userData.avatar}
-                        alt={userData.username} />
+                    <LazyLoad height={250} once>
+                        <img
+                            src={userData.avatar}
+                            alt={userData.username} />
+                    </LazyLoad>
                 </div>
                 <div>
                     <div>{getFullName(userData.first_name, userData.last_name)}</div>
@@ -148,4 +146,4 @@ const UserList = ({ userData, showPopupHandler, closePopup }) => {
     )
 }
 
-export default UserList
+export default React.memo(UserList)

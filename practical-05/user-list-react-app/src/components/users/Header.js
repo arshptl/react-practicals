@@ -28,7 +28,6 @@ display: flex;
         flex-basis: 0;
     }
 }
-
 }
 
 @media (min-width: 62.5em) {
@@ -78,4 +77,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default React.memo(Header)
