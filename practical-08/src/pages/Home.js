@@ -11,6 +11,9 @@ margin-bottom: 3em;
 display: flex;
 flex-direction: column;
 gap: 1em;
+position: absolute;
+left: 0;
+top: 0;
 
 button{
   padding: 0.7em 0.8em;
@@ -36,10 +39,15 @@ span{
 }
 
 @media (min-width: 37.5em){
+
+  div, button{
+    margin: 0 2em;
+  }
   padding: 0.6em;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 `;
@@ -51,6 +59,8 @@ const StyledProfileDiv = styled.div`
   width: 90%;
   margin: 0 auto;
   gap: 1em;
+  margin-top: 11em;
+
 
   @media (min-width: 37.5em){
     display: flex;
