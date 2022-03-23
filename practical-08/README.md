@@ -1,6 +1,36 @@
-# Getting Started with Create React App
+# Practical 08
+******User management app - using redux******
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Initiated the project using Create-React-App
+- Created UIs for the different pages(routes)
+- Created a redux architecture in the app
+- Used formik for form creation and Yup for validation
+- Stored state of user in redux store and local storage
+- Hosted on vercel: https://practical-08.vercel.app
+
+### Preview:
+<!-- ![Preview of output](https://user-images.githubusercontent.com/96298315/157815266-7bcb7dce-feeb-47b2-a313-99f6eed3156c.png) -->
+<p float="left">
+  <img src="https://user-images.githubusercontent.com/96298315/159455779-bee36397-9439-4f1a-a9e8-ab314b400346.png" width="400" />
+  <img src="https://user-images.githubusercontent.com/96298315/159457016-51712edd-d0b4-4f0c-af7d-5894d24f5c61.png" width="400" /> 
+  <img src="https://user-images.githubusercontent.com/96298315/159456301-04e47fd8-fa9c-4fff-a90f-5f59a442e5bc.png" width="400" />
+  <img src="https://user-images.githubusercontent.com/96298315/159457026-d6f32131-8ec0-46b6-920f-0c211c71c28c.png" width="400" />
+</p>
+
+## Library used
+- [styled-components](https://www.npmjs.com/package/styled-components) for styling
+- [react-icons](https://www.npmjs.com/package/react-icons) for icons
+
+## How to Run this project
+
+### Step 1:  `Clone this project`
+
+### Step 2:  `npm install`
+
+To install all the dependences.
+
+### Step 3: `npm start`
+To start this project
 
 ## Available Scripts
 
@@ -39,32 +69,4 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
