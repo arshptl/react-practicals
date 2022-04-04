@@ -1,11 +1,29 @@
-# Practical 05
-****User list app - UI****
+# Practical 06
+******User list app - Functional specifications******
 
 - Initiated the project using Create-React-App
-- Created a layout for User-list app
+- Used practical-05's template/UI
+- Added dynamic data instead of static data
+	- Apis
+		- [https://reqres.in/api/users?page=1](https://reqres.in/api/users?page=1)
+		- [https://reqres.in/api/users?page=2](https://reqres.in/api/users?page=2)
+
+### Env setup
+- .env
+	- REACT_APP_DOC_TITLE = "Optimizing Practical-07"
+- .env.development
+	- REACT_APP_API_ENDPOINT_FIRST = "https://reqres.in/api/users?page=1"
+REACT_APP_API_ENDPOINT_SECOND = "https://reqres.in/api/users?page=2"
+- .env.production
+	- REACT_APP_API_ENDPOINT_FIRST = "https://reqres.in/api/users?page=1"
+REACT_APP_API_ENDPOINT_SECOND = "https://reqres.in/api/users?page=2"
+- .env.staging
+	- REACT_APP_CUSTOM_NODE_ENV = "staging"
+REACT_APP_API_ENDPOINT_FIRST = "https://reqres.in/api/users?page=1"
+REACT_APP_API_ENDPOINT_SECOND = "https://reqres.in/api/users?page=2"
 
 ### Preview:
-![Preview of output](https://user-images.githubusercontent.com/96298315/157814019-18829eb9-7555-4bc9-aecb-96f8d41bd5b1.png)
+![Preview of output](https://user-images.githubusercontent.com/96298315/157815266-7bcb7dce-feeb-47b2-a313-99f6eed3156c.png)
 
 ## Library used
 - [styled-components](https://www.npmjs.com/package/styled-components) for styling
