@@ -11,6 +11,20 @@
 -   Added environments in the code
 -   Generated staging and production build
 
+### Env setup
+- .env
+	- REACT_APP_DOC_TITLE = "Optimizing Practical-07"
+- .env.development
+	- REACT_APP_API_ENDPOINT_FIRST = "https://reqres.in/api/users?page=1"
+REACT_APP_API_ENDPOINT_SECOND = "https://reqres.in/api/users?page=2"
+- .env.production
+	- REACT_APP_API_ENDPOINT_FIRST = "https://reqres.in/api/users?page=1"
+REACT_APP_API_ENDPOINT_SECOND = "https://reqres.in/api/users?page=2"
+- .env.staging
+	- REACT_APP_CUSTOM_NODE_ENV = "staging"
+REACT_APP_API_ENDPOINT_FIRST = "https://reqres.in/api/users?page=1"
+REACT_APP_API_ENDPOINT_SECOND = "https://reqres.in/api/users?page=2"
+
 ### Preview:
 ![Preview of output](https://user-images.githubusercontent.com/96298315/157815266-7bcb7dce-feeb-47b2-a313-99f6eed3156c.png)
 
