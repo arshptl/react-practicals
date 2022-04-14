@@ -1,4 +1,4 @@
-# Practical 06
+# Practical 07
 ******User list app - Functional specifications******
 
 - Initiated the project using Create-React-App
@@ -7,6 +7,9 @@
 	- Apis
 		- [https://reqres.in/api/users?page=1](https://reqres.in/api/users?page=1)
 		- [https://reqres.in/api/users?page=2](https://reqres.in/api/users?page=2)
+-    Optimized code
+-   Added environments in the code
+-   Generated staging and production build
 
 ### Env setup
 - .env
@@ -28,6 +31,8 @@ REACT_APP_API_ENDPOINT_SECOND = "https://reqres.in/api/users?page=2"
 ## Library used
 - [styled-components](https://www.npmjs.com/package/styled-components) for styling
 - [react-icons](https://www.npmjs.com/package/react-icons) for icons
+- [react-lazyload](https://www.npmjs.com/package/react-lazyload) for loading images
+- [env-cmd](https://www.npmjs.com/package/env-cmd) for executing commands using an environment from an env file
 
 ## How to Run this project
 
